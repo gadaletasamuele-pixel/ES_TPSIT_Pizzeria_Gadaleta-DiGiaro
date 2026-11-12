@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria da Mario - Scegli il Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #d9534f;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 1.2em;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 220px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+        .card h2 {
+            color: #d9534f;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .card p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pizzeria da Mario</h1>
+        <p>Il vero sapore della tradizione. Seleziona una sezione per visualizzare il menu dedicato:</p>
+    </header>
+
+    <div class="menu-container">
+        <a href="Pizze.html" class="card">
+            <h2>Pizze</h2>
+            <p>Scopri le nostre pizze classiche e speciali.</p>
+        </a>
+
+        <a href="Bevande.html" class="card">
+            <h2>Bevande</h2>
+            <p>Bibite fresche, acqua e birre alla spina.</p>
+        </a>
+
+        <a href="menudolci.html" class="card">
+            <h2>Dolci</h2>
+            <p>Concludi in dolcezza con i nostri dessert.</p>
+        </a>
+    </div>
+
+</body>
+</html>
